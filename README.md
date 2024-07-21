@@ -5,6 +5,7 @@ Postman Collection Viewer es un paquete PHP que se integra perfectamente con Lar
 Instalacion del paquete con composer:
 ```bash
 composer require luisj/postman-collection-viewer
+```
 
 # Instrucciones de uso
 Primero debes de exportar la collecion de postman dentro de alguna carpeta en tu proyecto, para poder renderizarla de la siguente forma:
@@ -13,3 +14,4 @@ use \Luisj\PostmanCollectionViewer\PostmanCollectionViewer;
 
 $path = base_path() . "/resources/postman/Camilasboutique.postman_collection.json";
 return (new PostmanCollectionViewer)->renderCollection($path);
+```
