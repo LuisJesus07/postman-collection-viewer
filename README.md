@@ -12,6 +12,6 @@ Primero debes de exportar la collecion de postman dentro de alguna carpeta en tu
 ```php
 use \Luisj\PostmanCollectionViewer\PostmanCollectionViewer;
 
-$path = base_path() . "/resources/postman/Camilasboutique.postman_collection.json";
+$path = base_path() . "/resources/postman/postman_collection.json";
 return (new PostmanCollectionViewer)->renderCollection($path);
 ```
