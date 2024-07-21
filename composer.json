@@ -17,7 +17,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "\\Luisj\\PostmanCollectionViewer\\PostmanCollectionViewer"
+                "\\Luisj\\PostmanCollectionViewer\\PostmanCollectionViewerServiceProvider"
             ]
         }
     }
