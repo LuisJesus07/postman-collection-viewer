@@ -211,7 +211,7 @@ POST http://127.0.0.1:8000/{{$response['originalRequest']['url']['path'][0] ?? n
       <script src="{{ asset('assets/js/bootstrap-treeview.min.js') }} "></script>
       <script src="{{ asset('assets/js/main.min.js') }} "></script>
       <script type="application/javascript">
-         var data = @json($sidebar_elements);
+         var data = @json($sidebarElements);
          $('#tree').treeview({
              data: data,
              levels: 10,
