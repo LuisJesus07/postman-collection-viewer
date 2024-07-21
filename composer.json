@@ -1,0 +1,17 @@
+{
+    "name": "luisj/postman-collection-viewer",
+    "description": "Muestra la documentacion de una api en una vista blade a partir de una coleccion de postman",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Luisj\\PostmanCollectionViewer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Luis Jesus",
+            "email": "luisjesusavilesmorales7@gmail.com"
+        }
+    ],
+    "require": {}
+}
