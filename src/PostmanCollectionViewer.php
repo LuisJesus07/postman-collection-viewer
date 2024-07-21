@@ -2,9 +2,9 @@
 
 namespace Luisj\PostmanCollectionViewer;
 
-use Luisj\PostmanCollectionViewer\PostmanService;
+use Luisj\PostmanCollectionViewer\Services\PostmanService;
 
-class PostmantCollectionViewer
+class PostmanCollectionViewer
 {
     /**
      * Renderizar vista a partir de una coleccion de postman

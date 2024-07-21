@@ -1,6 +1,6 @@
 <?php 
 
-namespace Luisj\PostmanCollectionViewer;
+namespace Luisj\PostmanCollectionViewer\Services;
 
 class PostmanService
 {

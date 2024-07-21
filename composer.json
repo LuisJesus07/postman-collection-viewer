@@ -13,5 +13,12 @@
             "email": "luisjesusavilesmorales7@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Luisj\\PostmanCollectionViewer\\MiLibreriaServiceProvider"
+            ]
+        }
+    }
 }
