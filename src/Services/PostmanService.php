@@ -2,7 +2,6 @@
 
 namespace Luisj\PostmanCollectionViewer;
 
-
 class PostmanService
 {
     /**
