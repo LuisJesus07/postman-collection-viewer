@@ -6,6 +6,10 @@ Instalacion del paquete con composer:
 ```bash
 composer require luisj/postman-collection-viewer
 ```
+Publicar los archivos css y js de la vista blade:
+```bash
+php artisan vendor:publish --provider="Luisj\PostmanCollectionViewer\PostmanCollectionViewerServiceProvider" --tag=public
+```
 
 # Instrucciones de uso
 Primero debes de exportar la collecion de postman dentro de alguna carpeta en tu proyecto, para poder renderizarla de la siguente forma:
