@@ -2,13 +2,17 @@
 
 namespace Luisj\PostmanCollectionViewer;
 
+use Luisj\PostmanCollectionViewer\PostmanCollectionViewer;
 use Illuminate\Support\ServiceProvider;
 
 class PostmanCollectionViewerServiceProvider extends ServiceProvider
 {
     public function register()
     {
-        // 
+        // Registra el binding en el contenedor de servicio
+        $this->app->singleton('postman-collection-viewer', function ($app) {
+            return new PostmanCollectionViewer();
+        });
     }
 
     public function boot()
