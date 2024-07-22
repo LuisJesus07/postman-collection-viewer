@@ -23,7 +23,7 @@ class PostmanCollectionViewerServiceProvider extends ServiceProvider
 
         //publicar assets (JS y CSS)
         $this->publishes([
-            __DIR__.'/../public' => public_path('/postman-collection-viewer-assets'),
+            __DIR__.'/public' => public_path('/postman-collection-viewer-assets'),
         ], 'public');
     }
 }
