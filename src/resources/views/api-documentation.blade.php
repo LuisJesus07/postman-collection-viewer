@@ -11,10 +11,10 @@
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
       <link rel="stylesheet" href="https://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css">
       <!-- using local links -->
-      <link rel="stylesheet" href="{{ asset('assets/css/main.min.css') }}">
-      <link rel="stylesheet" href="{{ asset('assets/css/sidebar-themes.min.css') }}">
-      <link rel="stylesheet" href="{{ asset('assets/css/bootstrap-treeview.min.css') }}">
-      <link rel="stylesheet" href="{{ asset('assets/css/postman.min.css') }}">
+      <link rel="stylesheet" href="{{ asset('postman-collection-viewer-assets/css/main.min.css') }}">
+      <link rel="stylesheet" href="{{ asset('postman-collection-viewer-assets/css/sidebar-themes.min.css') }}">
+      <link rel="stylesheet" href="{{ asset('postman-collection-viewer-assets/css/bootstrap-treeview.min.css') }}">
+      <link rel="stylesheet" href="{{ asset('postman-collection-viewer-assets/css/postman.min.css') }}">
       <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
    </head>
    <body>
