@@ -7,7 +7,7 @@ class PostmanService
     /**
      * Obtener collecion de postman
      */
-    public static function getCollection(string $path) : array
+    public static function getArrayFromJsonFile(string $path) : array
     {
         $collection = json_decode(file_get_contents($path), true);
 
