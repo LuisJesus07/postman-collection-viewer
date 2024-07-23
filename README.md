@@ -16,6 +16,21 @@ Primero debes de exportar la collecion de postman dentro de alguna carpeta en tu
 ```php
 use \Luisj\PostmanCollectionViewer\PostmanCollectionViewer;
 
-$path = base_path() . "/resources/postman/postman_collection.json";
-return (new PostmanCollectionViewer)->renderCollection($path);
+$path_collection = base_path() . "/resources/postman/postman_collection.json";
+
+return (new PostmanCollectionViewer)
+       ->loadCollection($path_collection)
+       ->renderView();
 ```
+
+Tambien se puede cargar el enviroment de la sigueinte forma
+```php
+$path_collection = base_path() . "/resources/postman/postman_collection.json";
+$path_enviroment = base_path() . "/resources/postman/postman_environment.json";
+
+return (new PostmanCollectionViewer)
+       ->loadCollection($path_collection)
+       ->loadEnviroment($path_enviroment)
+       ->renderView();
+```
+
