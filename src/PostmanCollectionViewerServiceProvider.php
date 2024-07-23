@@ -7,7 +7,7 @@ use Illuminate\Support\ServiceProvider;
 
 class PostmanCollectionViewerServiceProvider extends ServiceProvider
 {
-    public function register()
+    public function register() : void
     {
         // Registra el binding en el contenedor de servicio
         $this->app->singleton('postman-collection-viewer', function ($app) {
@@ -15,7 +15,7 @@ class PostmanCollectionViewerServiceProvider extends ServiceProvider
         });
     }
 
-    public function boot()
+    public function boot() : void
     {
         //cargar la vista blade
         $this->loadViewsFrom(__DIR__.'/resources/views', 'postman-collection-viewer');

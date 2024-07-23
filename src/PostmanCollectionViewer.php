@@ -3,6 +3,7 @@
 namespace Luisj\PostmanCollectionViewer;
 
 use Luisj\PostmanCollectionViewer\Services\PostmanService;
+use Illuminate\View\View;
 
 class PostmanCollectionViewer
 {
@@ -32,7 +33,7 @@ class PostmanCollectionViewer
     /**
      * Renderizar vista a partir de una coleccion de postman
      */
-    public function renderView()
+    public function renderView() : View
     {
         $sidebarElements = PostmanService::getSidebarElements($this->collection);
 
