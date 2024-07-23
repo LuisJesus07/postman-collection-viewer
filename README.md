@@ -23,7 +23,7 @@ return (new PostmanCollectionViewer)
        ->renderView();
 ```
 
-Tambien se puede cargar el enviroment de la sigueinte forma
+Tambien se puede cargar el enviroment
 ```php
 $path_collection = base_path() . "/resources/postman/postman_collection.json";
 $path_enviroment = base_path() . "/resources/postman/postman_environment.json";
