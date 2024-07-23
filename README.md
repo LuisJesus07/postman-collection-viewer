@@ -14,13 +14,11 @@ php artisan vendor:publish --provider="Luisj\PostmanCollectionViewer\PostmanColl
 # Instrucciones de uso
 Primero debes de exportar la collecion de postman dentro de alguna carpeta en tu proyecto, para poder renderizarla de la siguente forma:
 ```php
-use \Luisj\PostmanCollectionViewer\PostmanCollectionViewer;
+use \Luisj\PostmanCollectionViewer\Facades\PostmanCollectionViewer;
 
 $path_collection = base_path() . "/resources/postman/postman_collection.json";
 
-return (new PostmanCollectionViewer)
-       ->loadCollection($path_collection)
-       ->renderView();
+return PostmanCollectionViewer::loadCollection($path_collection)->renderView();
 ```
 
 Tambien se puede cargar el enviroment
@@ -28,8 +26,7 @@ Tambien se puede cargar el enviroment
 $path_collection = base_path() . "/resources/postman/postman_collection.json";
 $path_enviroment = base_path() . "/resources/postman/postman_environment.json";
 
-return (new PostmanCollectionViewer)
-       ->loadCollection($path_collection)
+return PostmanCollectionViewer::loadCollection($path_collection)
        ->loadEnviroment($path_enviroment)
        ->renderView();
 ```
